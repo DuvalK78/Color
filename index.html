@@ -25,23 +25,40 @@
 	    padding: 1.5em;
 	    flex-wrap: wrap;
     }
-    .card {
-      	background-color:#23242b;
-	    box-shadow: 0 0.5em 0.75em hsl(0 0% 0% / 0.4);
-	    border-radius: 2em;
-	    position: relative;
-	    width: 16em;
-	    height: 28em;
-    }
+.card {
+  background-color: #23242b;
+  border-radius: 2em;
+  width: 16em;
+  height: 28em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-color {
+  background-color: #A7E8F2; 
+  border-radius: 1.2em;
+  flex: 1;
+}
+
+.card-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
   </style>
 </head>
 <body>
-	<div class="card">
-		.color {
-		color:#A7E8F2
-		}
-		<p>color:#A7E8F2
-		Description : Icy breeze</p>
-	</div>
+<main>
+  <div class="card">
+    <div class="card-color"></div>
+    <div class="card-info">
+      <span class="card-hex">#A7E8F2</span>
+      <span class="card-name">Icy Breeze</span>
+    </div>
+  </div>
+</main>
 </body>
 </html>
